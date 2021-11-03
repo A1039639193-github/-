@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>收藏排行榜</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/ranking-list.css">
+    <script src="js/jquery-3.3.1.js"></script>
+</head>
+<body>
+<!--引入头部-->
+<div id="header"></div>
+<div class="contant">
+    <div class="shaixuan">
+        <span>线路名称</span>
+        <input type="text" id="rname">
+        <span>金额</span>
+        <input type="text" id="lprice">~<input type="text" id="hprice">
+        <button id="search">搜索</button>
+    </div>
+    <div class="list clearfix">
+        <ul id="favoriteRank">
+            <li>
+                <span class="num one">1</span>
+                <a href="route_detail.html"><img src="images/jiangxuan_4.jpg" alt=""></a>
+                <h4><a href="route_detail.html">【尾单特卖】全国-曼谷6-7天自由行 泰国出境旅游 特价往6-7天自由行 泰国出境旅游 特价往..</a></h4>
+                <p>
+                    <b class="price">&yen;<span>899</span>起</b>
+                    <span class="shouchang">已收藏450次</span>
+                </p>
+            </li>
+            <li>
+                <span class="num two">2</span>
+                <a href="route_detail.html"><img src="images/jiangxuan_4.jpg" alt=""></a>
+                <h4><a href="route_detail.html">【尾单特卖】全国-曼谷6-7天自由行 泰国出境旅游 特价往6-7天自由行 泰国出境旅游 特价往..</a></h4>
+                <p>
+                    <b class="price">&yen;<span>899</span>起</b>
+                    <span class="shouchang">已收藏450次</span>
+                </p>
+            </li>
+            <li>
+                <span class="num">3</span>
+                <a href="route_detail.html"><img src="images/jiangxuan_4.jpg" alt=""></a>
+                <h4><a href="route_detail.html">【尾单特卖】全国-曼谷6-7天自由行 泰国出境旅游 特价往6-7天自由行 泰国出境旅游 特价往..</a></h4>
+                <p>
+                    <b class="price">&yen;<span>899</span>起</b>
+                    <span class="shouchang">已收藏450次</span>
+                </p>
+            </li>
+            <li>
+                <span class="num">4</span>
+                <a href="route_detail.html"><img src="images/jiangxuan_4.jpg" alt=""></a>
+                <h4><a href="route_detail.html">【尾单特卖】全国-曼谷6-7天自由行 泰国出境旅游 特价往6-7天自由行 泰国出境旅游 特价往..</a></h4>
+                <p>
+                    <b class="price">&yen;<span>899</span>起</b>
+                    <span class="shouchang">已收藏450次</span>
+                </p>
+            </li>
+            <li>
+                <span class="num">5</span>
+                <a href="route_detail.html"><img src="images/jiangxuan_4.jpg" alt=""></a>
+                <h4><a href="route_detail.html">【尾单特卖】全国-曼谷6-7天自由行 泰国出境旅游 特价往6-7天自由行 泰国出境旅游 特价往..</a></h4>
+                <p>
+                    <b class="price">&yen;<span>899</span>起</b>
+                    <span class="shouchang">已收藏450次</span>
+                </p>
+            </li>
+            <li>
+                <span class="num">6</span>
+                <a href="route_detail.html"><img src="images/jiangxuan_4.jpg" alt=""></a>
+                <h4><a href="route_detail.html">【尾单特卖】全国-曼谷6-7天自由行 泰国出境旅游 特价往6-7天自由行 泰国出境旅游 特价往..</a></h4>
+                <p>
+                    <b class="price">&yen;<span>899</span>起</b>
+                    <span class="shouchang">已收藏450次</span>
+                </p>
+            </li>
+            <li>
+                <span class="num">7</span>
+                <a href="route_detail.html"><img src="images/jiangxuan_4.jpg" alt=""></a>
+                <h4><a href="route_detail.html">【尾单特卖】全国-曼谷6-7天自由行 泰国出境旅游 特价往6-7天自由行 泰国出境旅游 特价往..</a></h4>
+                <p>
+                    <b class="price">&yen;<span>899</span>起</b>
+                    <span class="shouchang">已收藏450次</span>
+                </p>
+            </li>
+            <li>
+                <span class="num">8</span>
+                <a href="route_detail.html"><img src="images/jiangxuan_4.jpg" alt=""></a>
+                <h4><a href="route_detail.html">【尾单特卖】全国-曼谷6-7天自由行 泰国出境旅游 特价往6-7天自由行 泰国出境旅游 特价往..</a></h4>
+                <p>
+                    <b class="price">&yen;<span>899</span>起</b>
+                    <span class="shouchang">已收藏450次</span>
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="pageNum">
+        <ul id="ul_li">
+            <li><a href="">首页</a></li>
+            <li class="threeword"><a href="#">上一页</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+            <li class="threeword"><a href="javascript:;">下一页</a></li>
+            <li class="threeword"><a href="javascript:;">末页</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--导入底部-->
+<div id="footer"></div>
+<!--导入布局js，共享header和footer-->
+<script src="js/getParameter.js"></script>
+<script>
+    $(function () {
+        var currentPage = getParameter("currentPage");
+        load(currentPage, null, null, null);
+    });
+    $(function () {
+        $("#search").click(function () {
+            var currentPage = getParameter("currentPage");
+            var rname = $("#rname").val();
+            var lprice = $("#lprice").val();
+            var hprice = $("#hprice").val();
+            load(currentPage, rname, lprice, hprice);
+        });
+    });
+
+    function load(currentPage, rname, lprice, hprice) {
+        $.get("favorite/favoriteRank", {
+            currentPage: currentPage,
+            rname: rname,
+            lprice: lprice,
+            hprice: hprice
+        }, function (pb) {
+
+            //遍历路线简介内容
+            var lis_pstr = '';
+            for (var i = 0; i < pb.list.length; i++) {
+                var li_pstr = '';
+                if (i == 0) {
+                    li_pstr = '<li>\n' +
+                        '                        <span class="num one">' + (i + 1) + '</span>\n' +
+                        '                        <a href="route_detail.html?rid=' + pb.list[i].rid + '"><img src="' + pb.list[i].rimage + '" alt=""></a>\n' +
+                        '                        <h4><a href="route_detail.html?rid=' + pb.list[i].rid + '">' + pb.list[i].rname + '</a></h4>\n' +
+                        '                        <p>\n' +
+                        '                            <b class="price">&yen;<span>' + pb.list[i].price + '</span>起</b>\n' +
+                        '                            <span class="shouchang">已收藏' + pb.list[i].count + '次</span>\n' +
+                        '                        </p>\n' +
+                        '                    </li>';
+                }
+                if (i == 1) {
+                    li_pstr = '<li>\n' +
+                        '                        <span class="num two">' + (i + 1) + '</span>\n' +
+                        '                        <a href="route_detail.html?rid=' + pb.list[i].rid + '"><img src="' + pb.list[i].rimage + '" alt=""></a>\n' +
+                        '                        <h4><a href="route_detail.html?rid=' + pb.list[i].rid + '">' + pb.list[i].rname + '</a></h4>\n' +
+                        '                        <p>\n' +
+                        '                            <b class="price">&yen;<span>' + pb.list[i].price + '</span>起</b>\n' +
+                        '                            <span class="shouchang">已收藏' + pb.list[i].count + '次</span>\n' +
+                        '                        </p>\n' +
+                        '                    </li>';
+
+                }
+                if (i > 1) {
+                    li_pstr = '<li>\n' +
+                        '                        <span class="num">' + (i + 1) + '</span>\n' +
+                        '                        <a href="route_detail.html?rid=' + pb.list[i].rid + '"><img src="' + pb.list[i].rimage + '" alt=""></a>\n' +
+                        '                        <h4><a href="route_detail.html?rid=' + pb.list[i].rid + '">' + pb.list[i].rname + '</a></h4>\n' +
+                        '                        <p>\n' +
+                        '                            <b class="price">&yen;<span>' + pb.list[i].price + '</span>起</b>\n' +
+                        '                            <span class="shouchang">已收藏' + pb.list[i].count + '次</span>\n' +
+                        '                        </p>\n' +
+                        '                    </li>';
+
+                }
+                lis_pstr += li_pstr;
+            }
+            $("#favoriteRank").html(lis_pstr);
+            var beforPage = pb.currentPage - 1;
+            if (beforPage <= 0) {
+                beforPage = 1;
+            }
+
+            //分页格子
+            var lisstr = '<li onclick="load(1,\''+rname+'\',\' '+lprice+'\',\''+hprice+'\')"><a href="javascript:void(0);">首页</a></li>\n' +
+                '            <li class="threeword" onclick="load('+beforPage+',\''+rname+'\',\''+lprice+'\',\''+hprice+'\')"><a href="javascript:void(0);">上一页</a></li>';
+            var begin;
+            var end;
+            if (pb.totalPage <= 10) {
+                begin = 1;
+                end = pb.totalPage;
+            } else {
+
+                if (pb.currentPage - 5 < 2) {
+                    begin = 1;
+                    end = begin + 9;
+                } else {
+                    if (pb.currentPage + 4 > pb.totalPage) {
+                        begin = pb.totalPage - 9;
+                        end = pb.totalPage;
+                    } else {
+                        begin = pb.currentPage - 5;
+                        end = pb.currentPage + 4;
+                    }
+                }
+            }
+            for (var i = begin; i <= end; i++) {
+                var listr = '<li onclick="javascript:load('+i+',\''+rname+'\',\''+lprice+'\',\''+hprice+'\');"><a href="javascript:void(0);">' + i + '</a></li>';
+                lisstr += listr;
+            }
+            /*for (var i = 1; i <= pb.totalPage; i++) {
+                var listr = '<li onclick="javascript:load('+i+');"><a href="javascript:void(0);">' + i + '</a></li>';
+                lisstr += listr;
+            }*/
+            var nextPage = pb.currentPage + 1;
+            if (nextPage > pb.totalPage) {
+                nextPage = pb.totalPage;
+            }
+            lisstr += '<li class="threeword" onclick="load('+nextPage+',\''+rname+'\',\''+lprice+'\',\''+hprice+'\')"><a href="javascript:void(0);">下一页</a></li>\n' +
+                '            <li class="threeword" onclick="load('+pb.totalPage+',\''+rname+'\',\''+lprice+'\',\''+hprice+'\')"><a href="javascript:void(0);">末页</a></li>';
+            $("#ul_li").html(lisstr);
+
+
+        });
+    }
+</script>
+<script type="text/javascript" src="js/include.js"></script>
+</body>
+</html>
